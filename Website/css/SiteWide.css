@@ -1,14 +1,21 @@
-﻿#BodyContainer {
-    margin: 0 auto;
-    position: relative;
-    border: solid black 1px;
-    background:#2E2C3D;
-}
+﻿/*Page Styles*/
 
 body {
     background:#14070B;/*44404c*/
     color:#000000;
 }
+
+
+#BodyContainer {
+    margin: 0 auto;
+    position: relative;
+    border: solid #8B6759 1px;
+    background:#B2ABAE;
+}
+
+    body a {
+        /*color:#3c4850;*/
+    }    
 
 .Mobile > header > div, .Mobile > footer > div, .Mobile > article > div, .Mobile > aside > div {
     max-width: 786px;
@@ -22,6 +29,8 @@ body {
     z-index: 1;
 }
 
+/*Header Styles*/
+
 #BodyContainer > header > div {
     background: black url('/img/HeaderBG.png') no-repeat;
     background-position: 25% 15%;
@@ -34,8 +43,28 @@ body {
     z-index: 2;
 }
 
-.Mobile > header > div > h2 {
+#SiteName {
     display: none;
+}
+
+#Logo {
+    padding:0 0 10px 33px;
+}
+
+.Mobile > header > div > h2 {
+    /*display: none;*/
+    float:right;
+    margin: 0 0 0 0;
+    padding: 0 10px;
+    -moz-border-bottom-left-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -khtml-border-bottom-left-radius: 5px;
+    -khtml-border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #670000;
 }
 
 #BodyContainer > header > div > h2 a {
@@ -50,6 +79,8 @@ body {
     display: normal;
 }
 
+
+/*Header Navigation Styles*/
 #MainNavigation {
     background:#8B2252;
 }
@@ -80,14 +111,13 @@ body {
         visibility:visible;
     }
 
-#SiteName {
-    display: none;
-}
 
+    /*Content Styles*/
 #BodyContainer > article > div {
     /*background: purple;*/
     margin-top: 50px;
 }
+
 
 #BodyContainer > aside > div {
     /*background: yellow;*/
@@ -99,6 +129,7 @@ body {
     padding: 0 10px 10px 10px;
 }
 
+/*Footer Styles*/
 #BodyContainer > footer > div {
     /*background: green;*/
     margin-top: -50px;
