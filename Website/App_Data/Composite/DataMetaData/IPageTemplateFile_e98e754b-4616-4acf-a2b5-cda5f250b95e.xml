@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataTypeDescriptor dataTypeId="e98e754b-4616-4acf-a2b5-cda5f250b95e" name="IPageTemplateFile" namespace="Composite.Data.Types" hasCustomPhysicalSortOrder="false" isCodeGenerated="false" cachable="false" typeManagerTypeName="Composite.Data.Types.IPageTemplateFile,Composite" buildNewHandlerTypeName="Composite.Data.Types.IFileBuildNewHandler,Composite">
+  <DataAssociations />
+  <DataScopes>
+    <DataScopeIdentifier name="public" />
+  </DataScopes>
+  <KeyPropertyNames />
+  <SuperInterfaces>
+    <SuperInterface type="Composite.Data.Types.IFile,Composite" />
+  </SuperInterfaces>
+  <Fields />
+</DataTypeDescriptor>

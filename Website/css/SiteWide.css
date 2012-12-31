@@ -1,0 +1,112 @@
+﻿#BodyContainer {
+    margin: 0 auto;
+    position: relative;
+    border: solid black 1px;
+    background:#584E56;
+}
+
+body {
+    background:#000011;
+    color:#000000;
+}
+
+.Mobile > header > div, .Mobile > footer > div, .Mobile > article > div, .Mobile > aside > div {
+    max-width: 786px;
+}
+
+.Mobile {
+    max-width: 786px;
+}
+
+#BodyContainer > footer > div, #BodyContainer > article > div, #BodyContainer > aside > div {
+    z-index: 1;
+}
+
+#BodyContainer > header > div {
+    background: black url('/img/HeaderBG.png') no-repeat;
+    background-position: 25% 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-bottom: solid 4px black;
+    z-index: 2;
+}
+
+.Mobile > header > div > h2 {
+    display: none;
+}
+
+#BodyContainer > header > div > h2 a {
+    text-decoration: none;
+}
+
+#BodyContainer > header > div > h2 > img {
+    display: none;
+}
+
+.Mobile > header > div > h2 > img {
+    display: normal;
+}
+
+#MainNavigation {
+    background:#8B2252;
+}
+
+.Mobile #MainNavigation {
+    position: absolute;
+    right: 100%; /*hidden offscreen*/
+    background: #000011;
+    color:white;
+    font-size: 40px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+    .Mobile #MainNavigation li, .Mobile #MainNavigation ul, .Mobile #MainNavigation img {
+        background: inherit;
+    }
+
+    .Mobile #MainNavigation ul {
+        margin: 0;
+    }
+
+    .Mobile #MainNavigation.Open {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        visibility:visible;
+    }
+
+#SiteName {
+    display: none;
+}
+
+#BodyContainer > article > div {
+    /*background: purple;*/
+    margin-top: 50px;
+}
+
+#BodyContainer > aside > div {
+    /*background: yellow;*/
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#BodyContainer > article > div, #BodyContainer > aside > div {
+    padding: 0 10px 10px 10px;
+}
+
+#BodyContainer > footer > div {
+    /*background: green;*/
+    margin-top: -50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+    #BodyContainer > footer > div * {
+        float: left;
+        padding-left: 10px;
+    }

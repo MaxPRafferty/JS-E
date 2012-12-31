@@ -1,0 +1,95 @@
+﻿20121220 10:39:22.9479 4  5 Information Composite.Core.WebClient.Setup.SetupService  Setup complete. Enjoy!
+20121220 10:39:24.6180 4 10 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 10:39:24:61 in process 7440
+20121220 10:54:34.0292 5 65 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 10:54:34:02 in process 7440
+20121220 10:54:41.9508 6 63 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 10:54:41:94 in process 7440
+20121220 10:54:53.7322 7 65 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 7 ended at 10:54:53:72 in process 7440
+20121220 10:54:59.6397 8 63 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 8 ended at 10:54:59:63 in process 7440
+20121220 10:57:40.3748 10 35 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 10 ended at 10:57:40:37 in process 7440
+20121220 10:58:02.0529 11 24 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 11 ended at 10:58:02:05 in process 7440
+20121220 10:58:09.8360 12 61 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 12 ended at 10:58:09:83 in process 7440
+20121220 10:58:16.9594 13 42 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 13 ended at 10:58:16:95 in process 7440
+20121220 10:59:44.0055 14 35 Error PackageServerFacade  System.TimeoutException: The request channel timed out while waiting for a reply after 00:00:59.5241971. Increase the timeout value passed to the call to Request or increase the SendTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout. 
+
+Server stack trace: 
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Composite.Core.PackageSystem.WebServiceClient.PackagesSoap.GetPackageList(GetPackageListRequest request)
+   at Composite.Core.PackageSystem.PackageServerFacadeImpl.GetPackageDescriptions(String packageServerUrl, Guid installationId, CultureInfo userCulture)
+20121220 10:59:44.0225 14 35 Error PackageServerFacade | INNER  System.TimeoutException: The HTTP request to 'https://package.composite.net/C1.asmx' has exceeded the allotted timeout of 00:00:59.9960000 while reading the response. The time allotted to this operation may have been a portion of a longer timeout. 
+   at System.ServiceModel.Channels.HttpInput.WebResponseHttpInput.WebResponseInputStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.ServiceModel.Channels.HttpInput.ReadBufferedMessage(Stream inputStream)
+   at System.ServiceModel.Channels.HttpInput.ParseIncomingMessage(HttpRequestMessage httpRequestMessage, Exception& requestException)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+20121220 10:59:44.0225 14 35 Error PackageServerFacade | INNER | INNER  System.Net.WebException: The operation has timed out.
+   at System.Net.ConnectStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.ServiceModel.Channels.HttpInput.WebResponseHttpInput.WebResponseInputStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+20121220 11:18:22.6409 14 42 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 14 ended at 11:18:22:63 in process 7440
+20121220 11:18:32.2527 15 65 Critical WorkflowFacade  Workflow terminated - Id = cb35d470-db3c-4729-acae-da337711727c, Exception:
+Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at Composite.Data.Types.IFileExtensions.ReadAllText(IFile file)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditPageTemplateWorkflow.initializeCodeActivity_ExecuteCode(Object sender, EventArgs e)
+   at System.Workflow.ComponentModel.Activity.RaiseEvent(DependencyProperty dependencyEvent, Object sender, EventArgs e)
+   at System.Workflow.Activities.CodeActivity.Execute(ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutor`1.Execute(T activity, ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutorOperation.Run(IWorkflowCoreRuntime workflowCoreRuntime)
+   at System.Workflow.Runtime.Scheduler.Run()
+
+20121220 11:18:32.3498 15 65 Critical WorkflowFacade  System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at Composite.Data.Types.IFileExtensions.ReadAllText(IFile file)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditPageTemplateWorkflow.initializeCodeActivity_ExecuteCode(Object sender, EventArgs e)
+   at System.Workflow.ComponentModel.Activity.RaiseEvent(DependencyProperty dependencyEvent, Object sender, EventArgs e)
+   at System.Workflow.Activities.CodeActivity.Execute(ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutor`1.Execute(T activity, ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutorOperation.Run(IWorkflowCoreRuntime workflowCoreRuntime)
+   at System.Workflow.Runtime.Scheduler.Run()
+
+20121220 11:29:08.8959 15 63 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 15 ended at 11:29:08:89 in process 7440
+20121220 11:29:16.4149 16 42 Warning ConsoleMessageServiceFacade  Console 'key6176313150208443' has a last known change numer of 25, but server current number is 1.
+20121220 11:29:24.6520 16 44 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 16 ended at 11:29:24:64 in process 7440
+20121220 11:29:30.7051 17 63 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 17 ended at 11:29:30:70 in process 7440
+20121220 11:29:38.7738 18 35 Critical WorkflowFacade  Workflow terminated - Id = ef6efd23-8b86-47ad-9174-6a34ce6ecb0b, Exception:
+Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at Composite.Data.Types.IFileExtensions.ReadAllText(IFile file)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditPageTemplateWorkflow.initializeCodeActivity_ExecuteCode(Object sender, EventArgs e)
+   at System.Workflow.ComponentModel.Activity.RaiseEvent(DependencyProperty dependencyEvent, Object sender, EventArgs e)
+   at System.Workflow.Activities.CodeActivity.Execute(ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutor`1.Execute(T activity, ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutorOperation.Run(IWorkflowCoreRuntime workflowCoreRuntime)
+   at System.Workflow.Runtime.Scheduler.Run()
+
+20121220 11:29:38.8549 18 35 Critical WorkflowFacade  System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Object.GetType()
+   at Composite.Data.Types.IFileExtensions.ReadAllText(IFile file)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditPageTemplateWorkflow.initializeCodeActivity_ExecuteCode(Object sender, EventArgs e)
+   at System.Workflow.ComponentModel.Activity.RaiseEvent(DependencyProperty dependencyEvent, Object sender, EventArgs e)
+   at System.Workflow.Activities.CodeActivity.Execute(ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutor`1.Execute(T activity, ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutorOperation.Run(IWorkflowCoreRuntime workflowCoreRuntime)
+   at System.Workflow.Runtime.Scheduler.Run()
+
+20121220 11:29:45.7099 18 42 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 18 ended at 11:29:45:70 in process 7440
+20121220 11:32:41.4710 19 61 Error XmlStringResourceProvider  String not found: 'chr-Cher-US' for provider 'Composite.Cultures'
+20121220 11:32:41.6221 19 61 Error XmlStringResourceProvider  String not found: 'ti-ET' for provider 'Composite.Cultures'
+20121220 11:32:41.6231 19 61 Error XmlStringResourceProvider  String not found: 'haw-US' for provider 'Composite.Cultures'
+20121220 11:32:41.6231 19 61 Error XmlStringResourceProvider  String not found: 'ku-Arab-IQ' for provider 'Composite.Cultures'
+20121220 11:32:41.6241 19 61 Error XmlStringResourceProvider  String not found: 'ca-ES-valencia' for provider 'Composite.Cultures'
+20121220 11:32:41.6241 19 61 Error XmlStringResourceProvider  String not found: 'tn-BW' for provider 'Composite.Cultures'
+20121220 11:32:41.6252 19 61 Error XmlStringResourceProvider  String not found: 'pa-Arab-PK' for provider 'Composite.Cultures'
+20121220 11:32:41.6252 19 61 Error XmlStringResourceProvider  String not found: 'ta-LK' for provider 'Composite.Cultures'
+20121220 11:32:41.6262 19 61 Error XmlStringResourceProvider  String not found: 'sd-Arab-PK' for provider 'Composite.Cultures'
+20121220 11:32:41.6262 19 61 Error XmlStringResourceProvider  String not found: 'ff-Latn-SN' for provider 'Composite.Cultures'
+20121220 11:32:41.6271 19 61 Error XmlStringResourceProvider  String not found: 'ti-ER' for provider 'Composite.Cultures'
+20121220 11:32:41.6271 19 61 Error XmlStringResourceProvider  String not found: 'tzm-Tfng-MA' for provider 'Composite.Cultures'
+20121220 11:34:44.5054 19 111 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 19 ended at 11:34:44:50 in process 7440
+20121220 11:34:50.0333 20 63 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 20 ended at 11:34:50:02 in process 7440
+20121220 11:37:15.9086 21 44 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 21 ended at 11:37:15:90 in process 7440

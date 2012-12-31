@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageTemplateElementss>
+  <PageTemplateElements Id="fae447ee-27c0-47ad-9e64-689deb130930" Title="Blank" PageTemplateFilePath="/Blank.xml" />
+  <PageTemplateElements Id="e65c0fb3-7edb-4afb-aa9f-01b1a6e09c1b" Title="Full" PageTemplateFilePath="/Full.xml" />
+  <PageTemplateElements Id="0d75d1bd-c6da-425b-bd15-c2512afb2834" Title="TwoColumn" PageTemplateFilePath="/TwoColumn.xml" />
+</PageTemplateElementss>

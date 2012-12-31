@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<SubscribedTypesCache xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Assemblies>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Composite.Workflows</AssemblyName>
+      <LastModified>2012-12-20T09:37:51.0837391-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>ICSharpCode.SharpZipLib</AssemblyName>
+      <LastModified>2012-12-20T09:37:51.5880221-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Common</AssemblyName>
+      <LastModified>2012-12-20T09:37:51.6351586-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Logging</AssemblyName>
+      <LastModified>2012-12-20T09:37:51.7084895-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Validation</AssemblyName>
+      <LastModified>2012-12-20T09:37:51.7940577-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Microsoft.Practices.ObjectBuilder</AssemblyName>
+      <LastModified>2012-12-20T09:37:51.828079-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>TidyNet</AssemblyName>
+      <LastModified>2012-12-20T09:37:51.8721088-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Composite</AssemblyName>
+      <LastModified>2012-12-20T10:39:10.1240013-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>CompositeC1Contrib.Core</AssemblyName>
+      <LastModified>2012-12-20T10:57:38.8991297-08:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>CompositeC1Contrib.Rendering.MasterPage</AssemblyName>
+      <LastModified>2012-12-20T10:57:39.0001979-08:00</LastModified>
+    </AssemblyInfo>
+  </Assemblies>
+</SubscribedTypesCache>
