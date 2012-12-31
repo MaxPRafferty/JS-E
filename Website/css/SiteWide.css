@@ -1,8 +1,8 @@
 ﻿/*Page Styles*/
 
 body {
-    background:#14070B;/*44404c*/
-    color:#000000;
+    background: #14070B; /*44404c*/
+    color: #000000;
 }
 
 
@@ -10,12 +10,12 @@ body {
     margin: 0 auto;
     position: relative;
     border: solid #8B6759 1px;
-    background:#B2ABAE;
+    background: #B2ABAE;
 }
 
-    body a {
-        /*color:#3c4850;*/
-    }    
+body a {
+    /*color:#3c4850;*/
+}
 
 .Mobile > header > div, .Mobile > footer > div, .Mobile > article > div, .Mobile > aside > div {
     max-width: 786px;
@@ -38,24 +38,34 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 100px;
     border-bottom: solid 4px black;
     z-index: 2;
 }
 
-#SiteName {
+#BodyContainer.Mobile > header > div {
+    height: 50px;
+}
+
+html > body > #BodyContainer > header > div > h2 > a > #SiteName {
     display: none;
 }
 
 #Logo {
-    padding:0 0 10px 33px;
+    float: left;
+    display: inline;
+    padding: 0 0 10px 40px;
 }
 
-.Mobile > header > div > h2 {
+.Mobile #Logo {
+    float: none;
+    padding: 0 0 10px 33px;
+}
+
+#BodyContainer > header > div > h2 {
     /*display: none;*/
-    float:right;
     margin: 0 0 0 0;
-    padding: 0 10px;
+    padding: 5px 10px;
     -moz-border-bottom-left-radius: 5px;
     -moz-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
@@ -65,6 +75,46 @@ body {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background: #670000;
+    width: 200px;
+}
+
+#BodyContainer.Mobile > header > div > h2 {
+    float: right;
+    padding: 0 10px 10px 10px;
+    width: auto;
+}
+
+#BodyContainer > header > div > h2 * {
+    display: inline;
+}
+
+#BodyContainer > header > div > h2 a .Title,
+#BodyContainer > header > div > h2 a:hover .Title,
+#BodyContainer > header > div > h2 a:active .Title,
+#BodyContainer > header > div > h2 a:visited .Title {
+    color: black;
+}
+
+#BodyContainer > header > div > h2 .Title {
+    line-height: 18px;
+    display: block;
+    padding-top: 5px;
+}
+
+#BodyContainer > header > div > h2 .SubTitle {
+    display: block;
+}
+
+#BodyContainer.Mobile > header > div > h2 .Title, #BodyContainer.Mobile > header > div > h2 .SubTitle {
+    display: none;
+}
+
+#BodyContainer > header > div > h2 a .SubTitle,
+#BodyContainer > header > div > h2 a:hover .SubTitle,
+#BodyContainer > header > div > h2 a:active .SubTitle,
+#BodyContainer > header > div > h2 a:visited .SubTitle {
+    color: black;
+    font-size: 10px;
 }
 
 #BodyContainer > header > div > h2 a {
@@ -82,14 +132,22 @@ body {
 
 /*Header Navigation Styles*/
 #MainNavigation {
-    background:#8B2252;
+    background: #8B2252;
+}
+
+#BodyContainer > header > div > nav > a {
+    display: none;
+}
+
+#BodyContainer.Mobile > header > div > nav > a {
+    display: inline;
 }
 
 .Mobile #MainNavigation {
     position: absolute;
     right: 100%; /*hidden offscreen*/
     background: #000011;
-    color:white;
+    color: white;
     font-size: 40px;
     z-index: 2;
     visibility: hidden;
@@ -108,11 +166,11 @@ body {
         right: 0;
         bottom: 0;
         top: 0;
-        visibility:visible;
+        visibility: visible;
     }
 
 
-    /*Content Styles*/
+/*Content Styles*/
 #BodyContainer > article > div {
     /*background: purple;*/
     margin-top: 50px;
@@ -137,7 +195,19 @@ body {
     overflow: hidden;
 }
 
-    #BodyContainer > footer > div * {
+    #BodyContainer > footer > div > * {
         float: left;
         padding-left: 10px;
+    }
+
+#MobileSelector > span + span {
+    font-weight: bold;
+}
+
+.Mobile #MobileSelector > span {
+    font-weight: bold;
+}
+
+    .Mobile #MobileSelector > span + span {
+        font-weight: normal;
     }

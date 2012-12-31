@@ -12,7 +12,18 @@
         }
     }
 
+    var swapMobileState = function () {
+        var nav = d("BodyContainer");
+        if (nav.className.indexOf("Mobile") < 0) {
+            nav.className += " Mobile";
+        }
+        else {
+            nav.className = nav.className.replace("Mobile", "");
+        }
+    }
+
     exports.swapMenuState = swapMenuState;
+    exports.swapMobileState = swapMobileState;
     return exports;
 }();
 

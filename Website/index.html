@@ -20,7 +20,7 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body >
-    <div id="BodyContainer" class="Mobile">
+    <div id="BodyContainer" class="">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -44,7 +44,11 @@ Sed tempus interdum ligula in eleifend. Maecenas id mauris non nunc pulvinar eui
         <header>
             <div>
                 <h2><a href="//google.com">
-                    <div id="Logo" style="background: url('img/JSE-Icon.png') no-repeat;">&nbsp;</div><span id="SiteName">SiteName</span></a></h2>
+                    <div id="Logo" style="background: url('img/JSE-Icon.png') no-repeat;">&nbsp;</div>
+                    <span id="SiteName">JS-E.US</span>
+                    <span class="Title">JS-E.US</span>
+                    <span class="SubTitle">JavaScript - Enlightened</span>
+                    </a></h2>
                 <nav>
                     <a href="#" onclick="template.swapMenuState()">
                         <img src="/img/MobileMenuWhite.png" alt="Menu" /></a>
@@ -71,6 +75,7 @@ Sed tempus interdum ligula in eleifend. Maecenas id mauris non nunc pulvinar eui
             <div>
                 <p>JS-E.US c Max P. Rafferty, all rights reserved </p>
                 <p>credits</p>
+                <p><a id="MobileSelector" href="#" onclick="template.swapMobileState()" ><span>Mobile </span>/ <span>Desktop</span></a></p>
             </div>
         </footer>
 
